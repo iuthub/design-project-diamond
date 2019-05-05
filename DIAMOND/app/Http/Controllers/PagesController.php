@@ -29,4 +29,8 @@ class PagesController extends Controller
         $title = 'Contact';
         return view('pages.contact')->with('title', $title);
     }
+    public function menu(){
+        $title = 'Menu';
+        return view('pages.menu')->with('title', $title);
+    }
 }

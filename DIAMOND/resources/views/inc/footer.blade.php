@@ -7,10 +7,11 @@
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
           <!-- Content -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
-          <p>Here you can use rows and columns here to organize your footer content.</p>
+          <h5 class="font-weight-bold text-uppercase mb-4">About us</h5>
+          
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate esse
             quasi, veritatis totam voluptas nostrum.</p>
+            <a href="" class="btn">More</a>
         </div>
         <!-- Grid column -->
         <hr class="clearfix w-100 d-md-none">
@@ -73,19 +74,19 @@
           <!-- Social buttons -->
           <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
           <!-- Facebook -->
-          <a type="button" class="btn-floating btn-fb">
+          <a type="button" class="btn-floating btn-fb" href="https://www.facebook.com/">
             <i class="fab fa-facebook-f"></i>
           </a>
           <!-- Twitter -->
-          <a type="button" class="btn-floating btn-tw">
+          <a type="button" class="btn-floating btn-tw" href="https://twitter.com/?lang=en">
             <i class="fab fa-twitter"></i>
           </a>
           <!-- Google +-->
-          <a type="button" class="btn-floating btn-gplus">
+          <a type="button" class="btn-floating btn-gplus" href="https://aboutme.google.com/u/0/?referer=gplus">
             <i class="fab fa-google-plus-g"></i>
           </a>
           <!-- Dribbble -->
-          <a type="button" class="btn-floating btn-telegram">
+          <a type="button" class="btn-floating btn-telegram" href="https://web.telegram.org/#/im">
             <i class="fab fa-telegram"></i>
           </a>
         </div>

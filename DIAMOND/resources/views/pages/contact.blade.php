@@ -2,6 +2,5 @@
 
 
 @section('content')
-        <h1><?php echo $title; ?></h1>
-        <p>This is the About page</p>
+        <div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
 @endsection

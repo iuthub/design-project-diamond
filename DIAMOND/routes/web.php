@@ -33,3 +33,4 @@ Auth::routes();
 Route::get('dashboard', 'DashboardController@index');
 
 Route::resource('reserves', 'ReservesController');
+Route::get('menu', 'PagesController@menu');

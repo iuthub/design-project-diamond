@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                {{-- <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
-                </a>
+                </a> --}}
+                <img src="{{ asset('images/logo3.png') }}" alt="DiamonD" href="{{ url('/') }}" id="nav-logo">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -26,10 +27,13 @@
                           <a class="nav-link" href="/services">Service</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="/posts">Blog</a>
+                          <a class="nav-link" href="/posts">News</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/menu">Menu</a>
                         </li>
                       </ul>
                     </ul>
@@ -42,11 +46,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
