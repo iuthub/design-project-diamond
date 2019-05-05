@@ -3,7 +3,7 @@
  @section('content')
  	<a href="/posts" class="btn btn-default shadow">Go Back</a>
 	<h1>{{ $post->title }}</h1>
-	<img src="/storage/cover_image/{{ $post->cover_image }}" alt="image" style="width: 100%;">
+	<img src="/storage/cover_image/{{ $post->cover_image }}" alt="image" style="width: 20px;">
 	<br>
 	<br>
 	<div>

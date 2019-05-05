@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                {{-- <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
-                </a>
+                </a> --}}
+                <img src="{{ asset('images/logo-nav.png') }}" alt="DiamonD" href="{{ url('/') }}" id="nav-logo">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
