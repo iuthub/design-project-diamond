@@ -1,0 +1,55 @@
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+}
+.carousel-inner {
+	width: 1020pt;
+	height: 620px;
+}
+.navbar-light .navbar-brand{
+	color: #fff;
+	font-size: 25px;	
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+
+}
+.logo {
+	width: 20px;
+	height: 25px;
+}
+#h1{
+	text-align: right;
+	font-family: californian FB;
+	color: #1E7898;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top:50px;
+	margin-right: 120px;
+}
+#p {
+text-align: center;
+font-family: arial;
+color:#4C5457;
+margin-left: 400px;
+font-size:25px;
+
+}
+.newsitem{
+	background-size: cover; 
+	background-position:center;
+}
+.food {
+height: 30px;
+width: 30px;
+}
+
+
+
+
+
+
