@@ -22,13 +22,12 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.7.5.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    
+    
 </head>
-<body>  
+<body>
     <div id="app">
-        
         @include('inc.navbar')
-        
         <div class="container-fluid">
             
             @include('inc.messages')
@@ -40,6 +39,10 @@
         @include('inc.footer')
     </div>
     <script src="{{ asset('js/jquery.min.js') }}"></script>
+    {{-- <script src="{{ asset('js/popper.min.js') }}"></script> --}}
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    </body>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="{{ asset('js/google-map.js') }}"></script>
+
+</body>
 </html>

@@ -5,76 +5,67 @@
         {{-- <h1>{{$title}}</h1> --}}
         @if(count($services) > 0)
 			<ul class="list-group">
-				{{-- @foreach ($services as $service)
-					<li class="list-group-item">{{ $service }}</li>
-				@endforeach --}}
-				<!-- Modal -->
-			    <div {{-- class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel" aria-hidden="true" --}}>
+			    <div>
 			      <div class="modal-dialog modal-lg" role="document">
 			        <div class="modal-content">
 			          <div class="modal-body">
 			            <div class="row">
-			              <div class="col-lg-12">
-			                <div class="bg-image" style="background-image: url({{ asset('images/reservation_1.jpg') }});"></div>
-			              </div>
 			              <div class="col-lg-12 p-5">
-			                {{-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			                  <small>CLOSE </small><span aria-hidden="true">&times;</span>
-			                </button> --}}
+			                
 			                <h1 class="mb-4">Reserve A Table</h1>  
-			                <form action="#" method="post">
+			                {!! Form::open(['action' => 'ReservesController@store', 'method' => 'POST']) !!}
+			                
 			                  <div class="row">
 			                    <div class="col-md-6 form-group">
-			                      <label for="m_fname">First Name</label>
-			                      <input type="text" class="form-control" id="m_fname">
+			                      {{ Form::label('name', 'First Name') }}
+									{{ Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Name']) }}
 			                    </div>
 			                    <div class="col-md-6 form-group">
-			                      <label for="m_lname">Last Name</label>
-			                      <input type="text" class="form-control" id="m_lname">
+			                      {{ Form::label('surname', 'Last Name') }}
+									{{ Form::text('surname', '', ['class' => 'form-control', 'placeholder' => 'Surname']) }}
 			                    </div>
 			                  </div>
 			                  <div class="row">
 			                    <div class="col-md-12 form-group">
-			                      <label for="m_email">Email</label>
-			                      <input type="email" class="form-control" id="m_email">
+			                      {{ Form::label('email', 'Email') }}
+								{{ Form::email('email', '', ['class' => 'form-control', 'placeholder' => 'Email']) }}
 			                    </div>
 			                  </div>
 			                  <div class="row">
 			                    <div class="col-md-6 form-group">
-								    <label for="guests">Number of guests:</label>
-								    <input type="number" class="form-control" id="guests" placeholder="Number" required>
+								    {{ Form::label('amount', 'Number of Guests') }}
+									{{ Form::number('amount', '', ['class' => 'form-control', 'placeholder' => '1 to 12']) }}
 								  </div>			                    
 							  	<div class="col-md-6 form-group">
-			                      <label for="m_phone">Phone</label>
-			                      <input type="tel" class="form-control" id="m_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-4567-8901" required>
+			                      {{ Form::label('phone', 'Phone') }}
+								{{ Form::text('phone', '', ['class' => 'form-control', 'placeholder' => 'ex:998998769920']) }}
 			                    </div>
 			                  </div>
 
 			                  <div class="row">
 			                    <div class="col-md-6 form-group">
-			                      <label for="m_date">Date</label>
-			                      <input type="text" class="form-control" id="m_date">
-			                    </div>
-			                    <div class="col-md-6 form-group">
-			                      <label for="m_time">Time</label>
-			                      <input type="text" class="form-control" id="m_time">
+			                      
+			                      {{ Form::label('date', 'Date') }}
+									{{ Form::text('date', '', ['class' => 'form-control', 'placeholder' => 'ex:1999-01-10']) }}
 			                    </div>
 			                  </div>
-
 			                  <div class="row">
 			                    <div class="col-md-12 form-group">
-			                      <label for="m_message">Message</label>
-			                      <textarea class="form-control" id="m_message" cols="30" rows="7"></textarea>
+			                      {{ Form::label('body', 'Message') }}
+								{{ Form::textarea('body', '', ['class' => 'form-control', 'placeholder' => 'Enter Message and Time, table should be reserved']) }}
 			                    </div>
 			                  </div>
 			                  
 			                  <div class="row">
 			                    <div class="col-md-12 form-group">
-			                      <input type="submit" class="btn btn-primary btn-lg btn-block" value="Reserve Now">
+			                      
+			                    	{{ Form::submit('Submit', ['class' => 'btn btn-primary shadow btn-lg btn-block']) }}
 			                    </div>
+							
 			                  </div>
 
 			                </form>
+			                {!! Form::close() !!}
 			              </div>
 			            </div>
 			            

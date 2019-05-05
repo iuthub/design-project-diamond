@@ -30,7 +30,7 @@
                                 <td>
                                     {!! Form::open(['action' => ['PostsController@destroy', $post->id], '_method' => 'POST', 'class' => 'float-right']) !!}
                                         {{ Form::hidden('_method', 'DELETE') }}
-                                        {{ Form::submit('DELETE', ['class' => 'btn btn-danger shadow']) }}
+                                        {{ Form::submit('DELETE', ['class' => 'btn btn-dange shadow']) }}
                                      {!! Form::close() !!}
 
                                 </td>
